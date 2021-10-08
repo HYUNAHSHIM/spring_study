@@ -1,11 +1,12 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
-import org.springframework.stereotype.Repository;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
-import java.util.*;
-
-@Repository
 public class MemoryMemberRepository implements MemberRepository {
     // 만들었던 MemberRepository interface를 implements -> 아래에 MemberRepository의 메서드 틀들을 가져옴. 여기선 모두 가져옴
 
