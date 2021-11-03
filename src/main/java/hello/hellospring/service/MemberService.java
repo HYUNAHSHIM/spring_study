@@ -4,8 +4,10 @@ import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.transaction.annotation.Transactional;
 
 // service -> 비즈니스 로직을 작성하는 부분
+@Transactional
 public class MemberService {
 
     // final = 처음 초기화 할 때와 생성자에서만 값을 할당할 수 있음. 그 외의 경우 값 수정 불가
